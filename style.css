@@ -9,6 +9,7 @@
 body {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgb(38, 38, 38);
@@ -44,4 +45,21 @@ button:hover {
 button:active {
   transform: translateY(3px);
   box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  font-size: 27px;
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 10px;
+  text-shadow: 0 5px 20px whitesmoke;
+  text-align: center;
+  border: 5px solid whitesmoke;
+}
+.text > p {
+  margin-top: 20px;
+}
+.text::first-line {
+  text-decoration: underline;
 }
